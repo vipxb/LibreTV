@@ -24,12 +24,14 @@ const API_SITES = {
     heimuer: {
         api: 'https://json.heimuer.xyz',
         name: '黑木耳',
-        detail: 'https://heimuer.tv'
+        detail: 'https://heimuer.tv',
+        filterAdRule: '#EXT-X-DISCONTINUITY\\n#EXTINF:\\d+\\.\\d+,\\n.*?\\n#EXT-X-DISCONTINUITY'
     },
     ffzy: {
         api: 'http://ffzy5.tv',
         name: '非凡影视',
-        detail: 'http://ffzy5.tv'
+        detail: 'http://ffzy5.tv',
+        filterAdRule: '#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY'
     },
     tyyszy: {
         api: 'https://tyyszy.com',
@@ -47,10 +49,6 @@ const API_SITES = {
     wolong: {
         api: 'https://wolongzyw.com',
         name: '卧龙资源',
-    },
-    cjhw: {
-        api: 'https://cjhwba.com',
-        name: '新华为',
     },
     hwba: {
         api: 'https://cjwba.com',
@@ -96,11 +94,6 @@ const API_SITES = {
         name: 'souav资源',
         adult: true
     },
-    siwa: {
-        api: 'https://siwazyw.tv',
-        name: '丝袜资源',
-        adult: true
-    },
     r155: {
         api: 'https://155api.com',
         name: '155资源',
@@ -120,10 +113,6 @@ const API_SITES = {
     zuid: {
         api: 'https://api.zuidapi.com',
         name: '最大资源'
-    },
-    suoni: {
-        api: 'https://suoniapi.com',
-        name: '索尼资源'
     },
     yutu: {
         api: 'https://yutuzy10.com',
